@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_foreground"
+        android:padding="5dp"
+        android:id="@+id/userimg"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userimg"
+        android:text="Username"
+        android:textAlignment="center"
+        android:fontFamily="@string/fontNApp"
+        android:textSize="20dp"
+        android:textColor="@color/grey"
+        android:id="@+id/user_details_name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_details_name"
+
+        android:text="email ID"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:id="@+id/user_details_email"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="@color/grey"/>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/user_details_email">
+
+
+
+
+    <TableLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/user_details"
+        android:id="@+id/tablelayout">
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_details"
+                android:text="Details"
+                android:textSize="20dp"
+                android:fontFamily="@string/fontNApp"
+                android:textColor="@color/pink"
+                android:padding="5dp"
+                android:layout_margin="10dp"/>
+
+
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:fontFamily="@string/fontNApp"
+                android:id="@+id/namelabel"
+                android:padding="5dp"
+                android:textColor="@color/grey"
+                android:layout_below="@+id/user_details"
+                android:text="Name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/namelabel"
+                android:fontFamily="@string/fontNApp"
+                android:text="Rutuja"
+                android:id="@+id/name_display"
+                android:layout_marginLeft="0dp"
+                android:padding="5dp"
+                android:textSize="17dp"
+                android:layout_below="@+id/user_details"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:id="@+id/contactlabel"
+                android:padding="5dp"
+                android:fontFamily="@string/fontNApp"
+                android:textColor="@color/grey"
+                android:layout_below="@+id/namelabel"
+                android:text="Contact No" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactdisplay"
+                android:layout_toRightOf="@+id/contactlabel"
+                android:text="84758787548"
+                android:fontFamily="@string/fontNApp"
+                android:layout_marginLeft="0dp"
+                android:layout_below="@+id/namelabel"
+                android:padding="5dp"
+                android:textSize="17dp"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addresslabel"
+                android:layout_below="@+id/contactlabel"
+                android:text="Address"
+                android:fontFamily="@string/fontNApp"
+                android:padding="5dp"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/addresslabel"
+                android:layout_below="@+id/contactdisplay"
+                android:padding="5dp"
+                android:id="@+id/addressdisplay"
+                android:layout_marginLeft="0dp"
+                android:text="Pune"
+                android:fontFamily="@string/fontNApp"
+                android:textSize="17dp"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/genderlabel"
+                android:layout_below="@+id/addresslabel"
+                android:text="Gender"
+                android:padding="5dp"
+                android:fontFamily="@string/fontNApp"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/genderlabel"
+                android:layout_below="@+id/addressdisplay"
+                android:padding="5dp"
+                android:id="@+id/genderdisplay"
+                android:fontFamily="@string/fontNApp"
+                android:layout_marginLeft="0dp"
+                android:text="Female"
+                android:textSize="17dp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:layout_height="60dp" />
+
+        </TableRow>
+            <RelativeLayout android:layout_gravity="center_vertical">
+           <Button android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:id="@+id/btnViewMH"
+               android:paddingLeft="10dp"
+               android:layout_marginLeft="100dp"
+               android:text="View Medical History"
+               android:backgroundTint="@color/pink"
+               android:textColor="#ffffff"
+               android:layout_gravity="center"/>
+            </RelativeLayout>
+
+    </TableLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
+
+

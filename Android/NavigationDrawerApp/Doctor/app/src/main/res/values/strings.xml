@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Doctor</string>
+    <string-array name="categories">
+        <item>Allergists/Immunologists</item>
+        <item>Cardiologist</item>
+        <item>Dermatologist</item>
+        <item>Endocrinologists</item>
+        <item>Family Physicians</item>
+        <item>Gastroenterologists</item>
+        <item>Gynecologists</item>
+        <item>
+        Neurologists</item>
+        <item>Ophthalmologists</item>
+    </string-array>
+    <string-array name="categories_loc">
+        <item>Pimpri</item>
+        <item>Chinchwad</item>
+        <item>Shivajinagar</item>
+        <item>Katraj</item>
+        <item>Category 5</item>
+        <item>Category 6</item>
+        <item>Category 7</item>
+    </string-array>
+    <string name="fontNApp">sans-serif-condensed</string>
+</resources>

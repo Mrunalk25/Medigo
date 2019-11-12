@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home_page"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_details"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="My Details" />
+        <item
+            android:id="@+id/nav_disease"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Search a Disease" />
+        <item
+            android:id="@+id/nav_doc"
+            android:icon="@drawable/ic_local_hospital_black_24dp"
+            android:title="Find a Doctor" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback_black_24dp"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_lock_black_24dp"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>

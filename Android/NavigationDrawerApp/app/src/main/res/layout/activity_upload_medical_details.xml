@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pallavi.navigationdrawerapp.UploadMedicalDetails">
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/rlMain">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Medical History"
+           android:textAlignment="center"
+           android:padding="10dp"
+           android:fontFamily="@string/fontNApp"
+           android:textSize="25dp"
+           android:textColor="@color/pink"
+           android:id="@+id/medical_histoy_label"/>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/llUsername"
+           android:layout_below="@+id/medical_histoy_label">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Name"
+               android:textSize="17dp"
+               android:fontFamily="@string/fontNApp"
+               android:id="@+id/namelabelmedical"
+               android:padding="5dp"
+               android:textColor="@color/grey"
+               android:layout_below="@+id/medical_histoy_label" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Patient's Name"
+               android:textSize="17dp"
+               android:fontFamily="@string/fontNApp"
+               android:id="@+id/namevaluemedical"
+               android:padding="5dp"
+               android:textColor="@color/grey"
+               android:layout_below="@+id/medical_histoy_label" />
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/llUsercontact"
+           android:layout_below="@+id/llUsername">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="17dp"
+               android:id="@+id/contactlabelmedical"
+               android:padding="5dp"
+               android:fontFamily="@string/fontNApp"
+               android:textColor="@color/grey"
+               android:layout_below="@+id/namelabelmedical"
+               android:text="Contact No" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/contactvaluemedical"
+               android:layout_toRightOf="@+id/contactlabelmedical"
+               android:text="84758787548"
+               android:fontFamily="@string/fontNApp"
+               android:layout_marginLeft="0dp"
+               android:layout_below="@+id/namelabelmedical"
+               android:padding="5dp"
+               android:textSize="17dp"/>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/llUseraddress"
+           android:layout_below="@+id/llUsercontact">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/addresslabelmedical"
+               android:layout_below="@+id/contactlabelmedical"
+               android:text="Address"
+               android:fontFamily="@string/fontNApp"
+               android:padding="5dp"
+               android:textSize="17dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_toRightOf="@+id/addresslabelmedical"
+               android:layout_below="@+id/contactvaluemedical"
+               android:padding="5dp"
+               android:id="@+id/addressvaluemedical"
+               android:layout_marginLeft="0dp"
+               android:text="Pune"
+               android:fontFamily="@string/fontNApp"
+               android:textSize="17dp"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/llUsergender"
+           android:layout_below="@+id/llUseraddress">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/genderlabelmedical"
+               android:layout_below="@+id/addresslabelmedical"
+               android:text="Gender"
+               android:padding="5dp"
+               android:fontFamily="@string/fontNApp"
+               android:textSize="17dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@+id/genderlabel"
+               android:layout_below="@+id/addressvaluemedical"
+               android:padding="5dp"
+               android:id="@+id/gendervaluemedical"
+               android:fontFamily="@string/fontNApp"
+               android:layout_marginLeft="0dp"
+               android:text="Female"
+               android:textSize="17dp"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/llUsergender"
+           android:id="@+id/agell">
+
+           <TextView
+               android:layout_width="61dp"
+               android:layout_height="wrap_content"
+               android:padding="5dp"
+               android:text="Age"
+               android:textColor="@color/pink"
+               android:textSize="17dp" />
+
+           <EditText
+               android:id="@+id/ageet"
+               android:layout_width="67dp"
+               android:hint="years"
+               android:paddingLeft="10dp"
+               android:background="@drawable/oval"
+               android:layout_height="40dp" />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/agell"
+           android:id="@+id/Familylayout"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Check all that apply to you or your immediate family"
+               android:textColor="@color/pink"
+               android:padding="5dp"
+               android:fontFamily="@string/fontNApp"
+               android:textSize="17dp"/>
+
+           <ListView
+               android:id="@+id/lvApplyFamily"
+               android:layout_width="wrap_content"
+               android:layout_height="451dp"
+               android:choiceMode="multipleChoice"
+               android:entries="@array/months" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Check all symptoms you are currently experiencing"
+               android:textColor="@color/pink"
+               android:padding="5dp"
+               android:fontFamily="@string/fontNApp"
+               android:textSize="17dp"/>
+
+           <ListView
+               android:id="@+id/lvSymptoms"
+               android:layout_width="wrap_content"
+               android:layout_height="1000dp"
+               android:choiceMode="multipleChoice" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Please list any medication allergies that you have"
+               android:textColor="@color/pink"
+               android:padding="5dp"
+               android:fontFamily="@string/fontNApp"
+               android:textSize="17dp"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:background="@drawable/oval"
+               android:layout_height="100dp"
+               android:padding="5dp"
+               android:id="@+id/etAllergies"
+               android:layout_margin="10dp"
+               android:textColor="@color/grey"
+               android:textSize="17dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Please list any medications you are currently taking (and dosage if known)"
+               android:textColor="@color/pink"
+               android:padding="5dp"
+               android:fontFamily="@string/fontNApp"
+               android:textSize="17dp"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:background="@drawable/oval"
+               android:layout_height="100dp"
+               android:id="@+id/etCurrentMedi"
+               android:padding="5dp"
+               android:layout_margin="10dp"
+               android:textColor="@color/grey"
+               android:textSize="17dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="If you are a woman, are you currently pregnant, or is there a possibility that you are pregnant?"
+               android:textColor="@color/pink"
+               android:padding="5dp"
+               android:fontFamily="@string/fontNApp"
+               android:textSize="17dp"/>
+           <Spinner
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/SpinnerPregnant"
+               android:entries="@array/Pregnant"></Spinner>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Are you currently using or do you have a history of tobacco use?"
+               android:textColor="@color/pink"
+               android:padding="5dp"
+               android:fontFamily="@string/fontNApp"
+               android:textSize="17dp"/>
+           <Spinner
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/SpinnerTobacco"
+               android:entries="@array/Pregnant"></Spinner>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Are you currently using or do you have a history of illegal drug use?"
+               android:textColor="@color/pink"
+               android:padding="5dp"
+               android:fontFamily="@string/fontNApp"
+               android:textSize="17dp"/>
+           <Spinner
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/SpinnerDruguse"
+               android:entries="@array/Pregnant"></Spinner>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Please describe your alcohol consumption :"
+               android:textColor="@color/pink"
+               android:padding="5dp"
+               android:fontFamily="@string/fontNApp"
+               android:textSize="17dp"/>
+           <Spinner
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/SpinnerAlcoholC"
+               android:entries="@array/AlcoholConsumption"></Spinner>
+
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/submitMH"
+               android:onClick=""
+               android:backgroundTint="@color/pink"
+               android:text="SUBMIT"
+               android:textSize="20dp"
+               android:layout_gravity="center_horizontal"
+               android:textColor="#ffffff"
+               android:padding="15dp"
+               android:layout_margin="10dp"/>
+
+
+       </LinearLayout>
+
+
+
+   </RelativeLayout>
+</ScrollView>

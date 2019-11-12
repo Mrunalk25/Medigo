@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name"></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="namerc">Rutuja Chaudhari</string>
+    <string name="fontNApp">sans-serif-condensed</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="categories">
+        <item>Allergists/Immunologists</item>
+        <item>Cardiologist</item>
+        <item >Dermatologist</item>
+        <item>Endocrinologists</item>
+        <item>Family Physicians</item>
+        <item>Gastroenterologists</item>
+        <item>Gynecologists</item>
+        <item>Neurologists</item>
+        <item>Ophthalmologists</item>
+    </string-array>
+
+    <string-array name="categories_loc">
+        <item >Pimpri</item>
+        <item>Chinchwad</item>
+        <item>Shivajinagar</item>
+        <item>Katraj</item>
+        <item>Category 5</item>
+        <item>Category 6</item>
+        <item>Category 7</item>
+    </string-array>
+
+    <string-array name="Pregnant">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="AlcoholConsumption">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Occasionally</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="months">
+        <item>Januray</item>
+        <item>February</item>
+        <item>March</item>
+    </string-array>
+
+</resources>

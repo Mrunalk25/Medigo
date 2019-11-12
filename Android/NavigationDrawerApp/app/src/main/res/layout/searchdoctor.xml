@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find a Doctor"
+        android:textAlignment="center"
+        android:textColor="@color/pink"
+        android:padding="15dp"
+        android:fontFamily="@string/fontNApp"
+        android:textSize="25dp"
+        android:id="@+id/tvSearchDoc"/>
+
+   <Spinner
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/dropdowncategory"
+       android:entries="@array/categories"
+       android:layout_below="@+id/tvSearchDoc"
+       android:padding="15dp">
+
+
+   </Spinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spacetv"
+        android:layout_below="@+id/dropdowncategory"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:entries="@array/categories"
+        android:layout_below="@+id/spacetv"
+        android:id="@+id/locationdropdown"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spacetv2"
+        android:layout_below="@+id/locationdropdown"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Search"
+        android:id="@+id/btnSearch"
+        android:fontFamily="@string/fontNApp"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:layout_below="@+id/spacetv2"
+        android:backgroundTint="@color/pink"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSearch"
+        android:id="@+id/rvRecyclerView"/>
+
+</RelativeLayout>

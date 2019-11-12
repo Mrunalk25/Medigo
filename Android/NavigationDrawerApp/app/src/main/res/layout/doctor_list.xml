@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLableList"
+        android:text="Doctor Details"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:fontFamily="@string/fontNApp"
+        android:textColor="@color/pink"
+        android:padding="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvLableList">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow>
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Name"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:id="@+id/namelabellist"
+                    android:textColor="@color/grey"/>
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/docNameValue1"
+                    android:text=" "
+                    android:textColor="@color/grey"
+                    android:textSize="18dp"
+                    android:padding="5dp"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="email ID"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:id="@+id/emaillabellist"
+                    android:textColor="@color/grey"/>
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/docEmailValue1"
+                    android:text=" "
+                    android:textColor="@color/grey"
+                    android:textSize="18dp"
+                    android:padding="5dp"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Contact"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:id="@+id/contactlabellist"
+                    android:textColor="@color/grey"/>
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/docContactValue1"
+                    android:text=" "
+                    android:textColor="@color/grey"
+                    android:textSize="18dp"
+                    android:padding="5dp"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Address"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:id="@+id/addresslabellist"
+                    android:textColor="@color/grey"/>
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/docAddressValue1"
+                    android:text=" "
+                    android:textColor="@color/grey"
+                    android:textSize="18dp"
+                    android:padding="5dp"/>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
